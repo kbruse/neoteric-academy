@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AppRouterUrls, AppRoutes } from './app-routing.config';
 import {AuthLoginComponent} from './views/auth/components';
+import { MainComponent } from './views/main/components';
 
 const routes: Routes = [
-  // odkomentować gdy dodasz komponent offers
-  // { path: '', redirectTo: AppRouterUrls.DEFAULT, pathMatch: 'full' },
+  { path: '', pathMatch: 'full', component: MainComponent },
   {
     path: AppRoutes.AUTH,
     children: [
-      { path: '', pathMatch: 'full', redirectTo: AppRouterUrls.LOGIN },
+      { path: '&&', pathMatch: 'full', redirectTo: AppRouterUrls.LOGIN },
       { path: AppRoutes.LOGIN, component: AuthLoginComponent }
     ]
   }
