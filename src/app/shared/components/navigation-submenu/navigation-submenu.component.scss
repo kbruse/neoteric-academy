@@ -1,0 +1,10 @@
+@import "variables";
+
+.submenu-container {
+  position: absolute;
+  top: $toolbar-menu-height;
+  left: 0;
+  right: 0;
+  height: $toolbar-submenu-height;
+  background-color: #673AB7;
+}

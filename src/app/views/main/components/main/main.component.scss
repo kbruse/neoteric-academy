@@ -1,0 +1,13 @@
+@import "variables";
+
+.main-container {
+  position: absolute;
+  top: $toolbar-menu-height + $toolbar-submenu-height;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  flex-flow: row nowrap;
+  justify-content: center;
+  text-align: center;
+}

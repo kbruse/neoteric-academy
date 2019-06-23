@@ -1,0 +1,7 @@
+@import "variables";
+
+.question-container {
+  position: relative;
+  width: $main-questions-width;
+  border: 1px solid #000;
+}
